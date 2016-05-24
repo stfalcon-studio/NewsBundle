@@ -27,6 +27,5 @@
         "psr-4": {
             "Stfalcon\\Bundle\\NewsBundle": ""
         }
-    },
-    "target-dir": "Stfalcon/Bundle/NewsBundle"
+    }
 }
