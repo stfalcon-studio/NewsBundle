@@ -1,7 +1,7 @@
 {
     "name": "stfalcon/news-bundle",
     "description": "Simple news module.",
-    "keywords": ["news"],
+    "keywords": ["page", "bundle", "stfalcon"],
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -11,13 +11,12 @@
             "email": "ceo@stfalcon.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0",
-        "symfony/symfony": "~2.1",
-        "stof/doctrine-extensions-bundle": "~1.0",
-        "sonata-project/admin-bundle": "~2.0",
-        "sonata-project/doctrine-orm-admin-bundle": "~2.0"
+        "php": ">=5.4.0",
+        "symfony/symfony": ">=2.1",
+        "stof/doctrine-extensions-bundle": "1.2.*",
+        "sonata-project/admin-bundle": "^2.2",
+        "sonata-project/doctrine-orm-admin-bundle": "^2.2"
     },
     "suggest": {
         "liip/functional-test-bundle": "functional testing bundle",
@@ -25,9 +24,8 @@
         "doctrine/data-fixtures": "required for functional testing"
     },
     "autoload": {
-        "psr-0": {
-            "Stfalcon\\Bundle\\NewsBundle": ""
+        "psr-4": {
+            "Stfalcon\\Bundle\\NewsBundle\\": ""
         }
-    },
-    "target-dir": "Stfalcon/Bundle/NewsBundle"
+    }
 }
